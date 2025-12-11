@@ -7,21 +7,21 @@
 
 A production-ready machine learning system for **predictive maintenance** using deep learning and traditional ML models. This project predicts machinery failures based on sensor data from the **AI4I 2020 dataset**, enabling proactive maintenance and reducing operational costs.
 
-## 🎯 Project Overview
+## Project Overview
 
 ### Business Problem
 Machine failures lead to costly downtime and production losses. This project builds a predictive model to identify equipment likely to fail, allowing maintenance teams to perform preventive maintenance before failures occur.
 
 ### Key Features
-- ✅ **Multiple ML Algorithms**: Neural Networks (PyTorch) and Random Forest models
-- ✅ **Modular Architecture**: Clean separation between data, training, and inference
-- ✅ **Production-Ready**: Scalable inference engine with preprocessing
-- ✅ **Comprehensive EDA**: Statistical analysis and visualizations
-- ✅ **Professional Documentation**: Model cards, deployment guides, and examples
-- ✅ **Unit Tests**: Automated testing for data, models, and inference
-- ✅ **Easy Deployment**: Flask API, batch processing, and command-line tools
+- **Multiple ML Algorithms**: Neural Networks (PyTorch) and Random Forest models
+- **Modular Architecture**: Clean separation between data, training, and inference
+- **Production-Ready**: Scalable inference engine with preprocessing
+- **Comprehensive EDA**: Statistical analysis and visualizations
+- **Professional Documentation**: Model cards, deployment guides, and examples
+- **Unit Tests**: Automated testing for data, models, and inference
+- **Easy Deployment**: Flask API, batch processing, and command-line tools
 
-## 📊 Dataset
+## Dataset
 
 **AI4I 2020 Predictive Maintenance Dataset**
 - **Size**: 10,000 samples
@@ -46,7 +46,7 @@ Machine failures lead to costly downtime and production losses. This project bui
 - **No Failure**: ~96.5% (9,652 samples)
 - **Failure**: ~3.5% (348 samples)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -114,7 +114,7 @@ print(result)
 predictions = inference.predict_batch(X_test)
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 predictive-maintenance/
@@ -153,7 +153,7 @@ predictive-maintenance/
 └── LICENSE                         # MIT License
 ```
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 ### Neural Network Model
 - **Accuracy**: 98.5%
@@ -169,7 +169,7 @@ predictive-maintenance/
 - **F1-Score**: 0.78
 - **ROC-AUC**: 0.88
 
-## 🔧 Usage Examples
+## Usage Examples
 
 ### Example 1: Train Model from Scratch
 
@@ -207,7 +207,7 @@ curl -X POST http://localhost:5000/predict \
   }'
 ```
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -220,7 +220,7 @@ pytest --cov=src tests/
 pytest tests/test_model.py -v
 ```
 
-## 📊 Model Architecture
+## Model Architecture
 
 ### Neural Network
 ```
@@ -249,7 +249,7 @@ Classification: [No Failure, Failure]
 - **Criterion**: Gini impurity
 - **Parallelization**: Multi-core processing
 
-## 🔄 Data Pipeline
+## Data Pipeline
 
 1. **Data Loading**: Load CSV from disk
 2. **Data Cleaning**: Handle missing values
@@ -260,14 +260,14 @@ Classification: [No Failure, Failure]
 7. **Evaluation**: Test on held-out test set
 8. **Inference**: Make predictions on new data
 
-## 📚 Documentation
+## Documentation
 
 - **[MODEL_CARD.md](MODEL_CARD.md)**: Detailed model documentation and limitations
 - **[CONTRIBUTING.md](CONTRIBUTING.md)**: Guidelines for contributing
 - **[DEPLOYMENT.md](DEPLOYMENT.md)**: Production deployment guide
 - **Notebook**: Full analysis and training walkthrough in `notebooks/predictive_maintenance.ipynb`
 
-## 🚀 Deployment
+## Deployment
 
 ### Docker
 ```bash
@@ -280,14 +280,14 @@ docker run -p 5000:5000 predictive-maintenance
 - **Google Cloud AI Platform**: Compatible with GAPIC
 - **Azure ML**: Ready for Azure ML pipeline
 
-## 💡 Key Insights
+## Key Insights
 
 1. **Class Imbalance**: Only 3.5% failure rate → need stratified sampling
 2. **Feature Importance**: Tool wear, torque, and temperature are strong predictors
 3. **Model Trade-off**: Neural Network trades precision for recall; RF is more conservative
 4. **Cost Considerations**: False negatives (missed failures) are more costly than false positives
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
@@ -299,17 +299,17 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 - [ ] Add support for multiclass failure types
 - [ ] Optimize inference latency
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
 
-## 👤 Author
+## Author
 
 **Salman Tarsoo**
 - GitHub: [@salmantarsoo-pixel](https://github.com/salmantarsoo-pixel)
 - Email: salman.tarsoo@gmail.com
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Dataset**: AI4I 2020 Predictive Maintenance Dataset from UCI Machine Learning Repository
 - **Libraries**: PyTorch, scikit-learn, pandas, numpy
@@ -317,14 +317,14 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
   - Matzka, S. (2020). Explainable Artificial Intelligence for Predictive Maintenance Applications
   - Deep Learning papers on classification
 
-## 📞 Support
+## Support
 
 For issues, questions, or feedback:
 - 📧 Open an issue on GitHub
 - 💬 Check existing discussions
 - 📖 Review the model card and documentation
 
-## 📋 Citation
+## Citation
 
 If you use this project in your research, please cite:
 
@@ -338,5 +338,3 @@ If you use this project in your research, please cite:
 ```
 
 ---
-
-Made with ❤️ for the ML and Maintenance Engineering communities
